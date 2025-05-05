@@ -13,16 +13,19 @@ header {
     text-align: center;
 }
 
+nav {
+    text-align: center; /* Centers the entire navigation section */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    background: #444;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: inline-block; /* Ensures the list is treated as inline content */
 }
 
 nav ul li {
+    display: inline; /* Ensures list items are displayed inline */
     margin: 0 15px;
 }
 
@@ -34,6 +37,18 @@ nav ul li a {
 section {
     padding: 2rem;
     text-align: center;
+}
+
+section ul {
+    list-style-type: disc; 
+    margin: 1em auto;
+    padding: 0;
+    text-align: left; 
+    max-width: 600px;
+}
+
+section ul li {
+    margin: 0.5em 0; 
 }
 
 footer {
